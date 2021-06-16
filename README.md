@@ -1,6 +1,6 @@
 ## Video device discovery
 
-A small standalone app to detect video devices connected to a Linux-based embedded platform, e.g., NVIDIA Jetson Xavier NX.
+A small standalone app to detect video devices connected to a Linux-based embedded platform.
 
 ## Sample Output
 
