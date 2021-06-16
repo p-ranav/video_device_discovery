@@ -8,8 +8,6 @@
 namespace fs = std::experimental::filesystem;
 #include <helpers.hpp>
 
-namespace roshi {
-
 struct VideoDevice {
   // e.g., "/dev/video0"
   fs::path file;
@@ -51,7 +49,7 @@ struct video_device_less_than {
 };
 
 static inline std::vector<VideoDevice> video_devices() {
-  std::vector<roshi::VideoDevice> video_devices;
+  std::vector<VideoDevice> video_devices;
   
   for (auto& device: get_video_device_files()) {
 
@@ -106,6 +104,4 @@ static inline std::vector<VideoDevice> video_devices() {
   std::sort(video_devices.begin(), video_devices.end(), video_device_less_than());
 
   return video_devices;
-}
-
 }
