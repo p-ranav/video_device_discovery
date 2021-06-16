@@ -1,8 +1,7 @@
 #include <video_device.hpp>
 
 int main() {
-
-  for (auto& vd: roshi::video_devices()) {
+  for (auto& vd: video_devices()) {
     std::cout << vd.file.string() << "\n";
     std::cout << " Driver: " << vd.driver << "\n";
     std::cout << " Card: " << vd.card << "\n";
@@ -14,5 +13,4 @@ int main() {
     }
     std::cout << "\n\n";
   }
-  
 }
